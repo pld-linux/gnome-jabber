@@ -1,12 +1,12 @@
 Summary:	A GNOME 2 Jabber client
 Summary(pl):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
-Version:	0.1.0
-Release:	0.2
+Version:	0.2
+Release:	0.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://gnome-jabber.sourceforge.net/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	0551e2e90cc3d6f066b7009b9479994a
+Source0:	http://dl.sourceforge.net/gnome-jabber/%{name}-%{version}.tar.gz
+# Source0-md5:	ae5acf1958d61e13ead5d3f47eaf3c4e
 Source1:	%{name}.desktop
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://gnome-jabber.sf.net/
@@ -25,7 +25,7 @@ Komunikator internetowy dla GNOME u¿ywaj±cy protoko³u Jabbera.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %configure
@@ -33,18 +33,22 @@ Komunikator internetowy dla GNOME u¿ywaj±cy protoko³u Jabbera.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+	
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
-cp images/jsf.png $RPM_BUILD_ROOT%{_pixmapsdir}
+
+%find_lang %{name} --all-name
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ChangeLog TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/*
-%{_pixmapsdir}/*
+#%%{_pixmapsdir}/*
