@@ -1,0 +1,57 @@
+diff -aurN gnome-jabber-0.4.orig/gnome-jabber.schemas.in gnome-jabber-0.4/gnome-jabber.schemas.in
+--- gnome-jabber-0.4.orig/gnome-jabber.schemas.in	2004-01-28 20:51:52.000000000 +0100
++++ gnome-jabber-0.4/gnome-jabber.schemas.in	2004-01-29 18:08:59.069792320 +0100
+@@ -478,7 +478,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_user_online</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/contact.wav</default>
++      <default>/usr/share/gnome-jabber/contact.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
+@@ -491,7 +491,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_user_offline</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/contact.wav</default>
++      <default>/usr/share/gnome-jabber/contact.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
+@@ -504,7 +504,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_receive_message</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/message.wav</default>
++      <default>/usr/share/gnome-jabber/message.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
+@@ -517,7 +517,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_receive_chat</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/message.wav</default>
++      <default>/usr/share/gnome-jabber/message.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
+@@ -530,7 +530,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_receive_headline</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/message.wav</default>
++      <default>/usr/share/gnome-jabber/message.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
+@@ -543,7 +543,7 @@
+       <applyto>/apps/gnome-jabber/preferences/notifications/sound_file_on_receive_error</applyto>
+       <owner>gnome-jabber</owner>
+       <type>string</type>
+-      <default>/usr/local/share/gnome-jabber/message.wav</default>
++      <default>/usr/share/gnome-jabber/message.wav</default>
+       <locale name="C">
+          <short></short>
+          <long>
