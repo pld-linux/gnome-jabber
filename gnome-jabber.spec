@@ -1,12 +1,13 @@
 Summary:	A GNOME 2 Jabber client
 Summary(pl):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
-Version:	0.3
-Release:	0.1
+Version:	0.4
+%define		snap 20031123
+Release:	0.%{snap}.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/gnome-jabber/%{name}-%{version}.tar.gz
-# Source0-md5:	eb3e79fabff45c5fadd8feb88a4d75d6
+Source0:	ftp://distfiles.pld-linux.org/src/%{name}-%{version}-%{snap}.tar.gz
+# Source0-md5:	5595e174223d8777d79a4e5bee8eec62
 Source1:	%{name}.desktop
 URL:		http://gnome-jabber.sf.net/
 BuildRequires:	GConf2-devel
@@ -28,9 +29,10 @@ An Instant Message Client for GNOME using the Jabber Protocol.
 Komunikator internetowy dla GNOME u¿ywaj±cy protoko³u Jabbera.
 
 %prep
-%setup -q
+%setup -qn %{name}-%{version}-%{snap}
 
 %build
+sh ./autogen.sh
 %configure
 %{__make}
 
@@ -57,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ChangeLog TODO
-%config %{_sysconfdir}/gconf/schemas/*
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/*
+%{_sysconfdir}/gconf/schemas/*
