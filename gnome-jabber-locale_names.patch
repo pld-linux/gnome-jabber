@@ -1,0 +1,12 @@
+diff -aurN gnome-jabber-0.4.orig/configure.in gnome-jabber-0.4/configure.in
+--- gnome-jabber-0.4.orig/configure.in	2004-04-10 22:54:24.000000000 +0200
++++ gnome-jabber-0.4/configure.in	2004-04-22 18:37:35.283546808 +0200
+@@ -124,7 +124,7 @@
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Gettext package name])
+ 
+ dnl Please keep these sorted alphabetically
+-ALL_LINGUAS="ca cs de en_CA en_GB es fr ga hr lt nl no pt pt_BR ru sr sr@Latn sv"
++ALL_LINGUAS="ca cs de en_CA en_GB es fr ga hr lt nb nl pt pt_BR ru sr sr@Latn sv"
+                                                                                                                                      
+ AM_GLIB_GNU_GETTEXT
+         
