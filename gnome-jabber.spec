@@ -2,13 +2,12 @@ Summary:	A GNOME 2 Jabber client
 Summary(pl):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
 Version:	0.2
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/gnome-jabber/%{name}-%{version}.tar.gz
 # Source0-md5:	ae5acf1958d61e13ead5d3f47eaf3c4e
 Source1:	%{name}.desktop
-Patch0:		%{name}-DESTDIR.patch
 URL:		http://gnome-jabber.sf.net/
 BuildRequires:	gnet-devel
 BuildRequires:	gtk+2-devel
@@ -25,7 +24,6 @@ Komunikator internetowy dla GNOME u¿ywaj±cy protoko³u Jabbera.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
 %configure
@@ -51,4 +49,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/*
-#%%{_pixmapsdir}/*
