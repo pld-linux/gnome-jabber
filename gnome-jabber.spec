@@ -9,7 +9,7 @@ Source0:	http://gnome-jabber.sourceforge.net/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	0551e2e90cc3d6f066b7009b9479994a
 Source1:	%{name}.desktop
 Patch0:		%{name}-DESTDIR.patch
-URL:		http://gnome-jabber.sf.net
+URL:		http://gnome-jabber.sf.net/
 BuildRequires:	gnet-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
