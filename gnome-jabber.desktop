@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gnome Jabber
+Comment=Gnome Jabber Client
+Comment[pl]=Klient Jabbera dla Gnome
+Exec=gnome-jabber
+Icon=jsf.png
+Terminal=false
+Type=Application
+Categories=Application;Network;
