@@ -2,12 +2,12 @@ Summary:	A GNOME 2 Jabber client
 Summary(pl):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
 Version:	0.4
-%define		snap 20040129
-Release:	0.%{snap}.2
+%define		snap 20040301
+Release:	0.%{snap}.1
 License:	GPL
 Group:		Applications/Communications
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
-# Source0-md5:	5f392b0bfa6c8a1baab6f2a54f93d00a
+# Source0-md5:	51451a9a52754744c10a61d5b4dbc13d
 Source1:	%{name}.desktop
 Patch0:		%{name}-schemas.patch
 URL:		http://gnome-jabber.sf.net/
