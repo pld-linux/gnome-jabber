@@ -7,7 +7,7 @@ Release:	0.%{snap}.1
 License:	GPL
 Group:		Applications/Communications
 Source0:	%{name}-%{version}-%{snap}.tar.gz
-# Source0-md5:  039b3c3062b30e859b7ef00bf0de0c42
+# Source0-md5:	5595e174223d8777d79a4e5bee8eec62
 Source1:	%{name}.desktop
 URL:		http://gnome-jabber.sf.net/
 BuildRequires:	GConf2-devel
