@@ -11,15 +11,18 @@ Source0:	%{name}-%{version}-%{snap}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://gnome-jabber.sf.net/
 BuildRequires:	GConf2-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gnet-devel
 BuildRequires:	gtk+2-devel
-BuildRequires:	libxml2-devel
+BuildRequires:	intltool
 BuildRequires:	libgnomeui-devel
+BuildRequires:	libtool
+BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper
 Requires(post): GConf2
 Requires(post): /usr/bin/scrollkeeper-update
-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,7 +39,7 @@ Komunikator internetowy dla GNOME u¿ywaj±cy protoko³u Jabbera.
 %{__aclocal}
 %{__autoheader}
 %{__autoconf}
-%{__automake} --add-missing
+%{__automake}
 intltoolize --copy --force
 
 %configure
