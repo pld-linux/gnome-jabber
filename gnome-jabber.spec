@@ -6,7 +6,7 @@ Version:	0.4
 Release:	0.%{snap}.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	ftp://distfiles.pld-linux.org/src/%{name}-%{version}-%{snap}.tar.gz
+Source0:	%{name}-%{version}-%{snap}.tar.gz
 # Source0-md5:	5595e174223d8777d79a4e5bee8eec62
 Source1:	%{name}.desktop
 URL:		http://gnome-jabber.sf.net/
