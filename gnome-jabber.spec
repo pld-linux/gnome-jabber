@@ -1,3 +1,4 @@
+# WARNING: That project is dead -> moved to gossip
 Summary:	A GNOME 2 Jabber client
 Summary(pl):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
