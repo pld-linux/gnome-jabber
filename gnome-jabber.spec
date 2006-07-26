@@ -11,7 +11,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-jabber/0.4/%{name}-%{versi
 Source1:	%{name}.desktop
 Patch0:		%{name}-schemas.patch
 Patch1:		%{name}-locale_names.patch
-URL:		http://gnome-jabber.sf.net/
+URL:		http://gnome-jabber.sourceforge.net/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -23,8 +23,8 @@ BuildRequires:	libtool
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper
-Requires(post): GConf2
-Requires(post): /usr/bin/scrollkeeper-update
+Requires(post):	/usr/bin/scrollkeeper-update
+Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,7 +47,7 @@ cp /usr/share/automake/mkinstalldirs .
 %{__autoheader}
 %{__autoconf}
 %{__automake}
-intltoolize --copy --force
+%{__intltoolize}
 
 %configure
 %{__make}
