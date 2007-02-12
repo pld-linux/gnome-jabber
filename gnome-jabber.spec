@@ -1,6 +1,6 @@
 # WARNING: That project is dead -> moved to gossip
 Summary:	A GNOME 2 Jabber client
-Summary(pl):	Klient Jabbera dla GNOME 2
+Summary(pl.UTF-8):   Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
 Version:	0.4
 Release:	3
@@ -30,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An Instant Message Client for GNOME using the Jabber Protocol.
 
-%description -l pl
-Komunikator internetowy dla GNOME uøywaj±cy protoko≥u Jabbera.
+%description -l pl.UTF-8
+Komunikator internetowy dla GNOME u≈ºywajƒÖcy protoko≈Çu Jabbera.
 
 %prep
 %setup -q
