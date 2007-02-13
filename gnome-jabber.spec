@@ -1,6 +1,6 @@
 # WARNING: That project is dead -> moved to gossip
 Summary:	A GNOME 2 Jabber client
-Summary(pl.UTF-8):   Klient Jabbera dla GNOME 2
+Summary(pl.UTF-8):	Klient Jabbera dla GNOME 2
 Name:		gnome-jabber
 Version:	0.4
 Release:	3
