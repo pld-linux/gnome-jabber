@@ -15,7 +15,7 @@ URL:		http://gnome-jabber.sourceforge.net/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnet-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
